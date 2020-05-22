@@ -28,13 +28,11 @@ public class Activity01 {
                         else if(input[j] <= IdealSystolic) System.err.println("Ideal Systolic Blood Pressure");
                         else if(input[j] <= MaxSystolic) System.err.println("Pre-High Systolic Blood Pressure");
                         else if(input[j] > MaxSystolic) System.err.println("High Systolic Blood Pressure");
-                        ;
                 break;
                 case 1: if(input[j] < LowDiastolic) System.err.println("Low Diastolic Blood Pressure");
                         else if(input[j] <= IdealDiastolic) System.err.println("Ideal Diastolic Blood Pressure");
                         else if(input[j] <= MaxDiastolic) System.err.println("Pre-High Diastolic Blood Pressure");
                         else if(input[j] > MaxDiastolic) System.err.println("High Diastolic Blood Pressure");
-                        ;
                 break;
             }
         }
