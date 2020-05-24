@@ -16,4 +16,10 @@ public class Computer {
     double getCpuSpeed(){
         return cpuSpeed;
     }
+
+    // Function to print type
+    void whatIsIt(){
+        System.out.println("This is a Computer");
+    }
+
 }

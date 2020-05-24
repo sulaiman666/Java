@@ -16,4 +16,9 @@ public class Tablet extends Computer {
     double getScreenSize(){
         return screenSize;
     }
+
+    //Function to print thype
+    void whatIsIt(){
+        System.out.println("This is a Tablet");
+    }
 }

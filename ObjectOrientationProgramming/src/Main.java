@@ -24,25 +24,67 @@ public class Main {
 
         /*=====================================Inheritance======================================================*/
 
-        /*                              Start Computer.class Section                                            */
+        /*                                 Inheritance Section                                                  */
+        // Inheritance in programming have the same concept as we learn in biology, we know Inheritance we learn
+        // parent will give their DNA to their children. In programming Inheritance we give access to child class
+        // to use everything inside parent class, because child class have the same DNA as parent class
 
         // Initiate Computer.class
         // Computer myPc = new Computer();
         // Initiate Tablet.class
-        Tablet myTab = new Tablet();
+        // Tablet myTab = new Tablet();
 
         // Set cpuSpeed
-        myTab.setCpuSpeed(2.0);
+        // myTab.setCpuSpeed(2.0);
         // Set screenSize
-        myTab.setScreenSize(14.0);
+        // myTab.setScreenSize(14.0);
 
         // Printing cpuSpeed on the screen
-        System.out.println(myTab.getCpuSpeed());
+        // System.out.println(myTab.getCpuSpeed());
         // Printing screenSize on the screen
-        System.out.println(myTab.getScreenSize());
+        // System.out.println(myTab.getScreenSize());
+
+        /*                                 Inheritance Section                                                  */
+
+        /*                                  Overriding Section                                                  */
+        // Overriding is giving other class permission to overwrite another class, it can be parent to child
+        // or the other way around depending of which one you give access to. Like you can see in this example
+        // both tablet and computer has same function whatIsIt
+
+        // Variable to initiate the class
+        Computer myTab = new Tablet();  // This is possible because tablet extends from computer which mean tablet
+                                        // need to be declared as a Computer
+
+        // Call Function to call the print inside the class
+        myTab.whatIsIt();
+
+        // To prevent Overriding we can use static method that wont allow it to be override by other
+
+        // First you have make the class into static, in this example we will make exact same code as computer
+        // except this time it was static and we gonna make it static
+
+        // Variable to initiate the class
+        // StaticComputer myStaticTab = new StaticTablet();    // This cant be done because we use Static inside the
+                                                            // Computer that wont allow us to override the class
+
+        // Call function to call the print inside the class
+        // myStaticTab.whatIsIt();
+
+        /*                                  Overriding Section                                                  */
+
+        /*                                     Final Section                                                    */
+        // Final method wont allow other to access it at all, you can make method to be final so it cant be
+        // override by other
+
+        // Initiate temperature class
+        Temperature temp = new Temperature();
+
+        // Print the result
+        System.out.println(temp.getTempC());
+        System.out.println(temp.getTempF());
 
 
+        /*                                     Final Section                                                    */
 
-        /*                               End Computer.class Section                                             */
     }
 }
