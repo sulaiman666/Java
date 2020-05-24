@@ -34,4 +34,18 @@ public class WordTool {
         }
         return count;
     }
+
+    // Function to count specific letter
+    public int SpecificLetter(String s, char letter){
+        // Variable to store letter count
+        int count = 0;
+
+        // Checking is it empty of not
+        if(!(s == null || s.isEmpty())){
+            // Count specific letter
+            count = s.length() - s.replace(Character.toString(letter), "").length();
+        }
+
+        return count;
+    }
 }

@@ -11,9 +11,11 @@ public class Main {
         System.out.println("Counting given text " + word);
         // Using WordCount function from WordTool.class
         System.out.println("Total words: " + wt.WordCount(word));
-        //Using FullCount function with space from WordTool.class
+        // Using FullCount function with space from WordTool.class
         System.out.println("Total letter with space: " + wt.FullCount(word, true));
-        //Using FullCount function without space from WordTool.class
+        // Using FullCount function without space from WordTool.class
         System.out.println("Total letter without space: " + wt.FullCount(word, false));
+        // Using SpecificLetter function from WordTool.class
+        System.out.println("Total amount of 'L': " + wt.SpecificLetter(word, 'L'));
     }
 }
