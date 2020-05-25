@@ -86,5 +86,34 @@ public class Main {
 
         /*                                     Final Section                                                    */
 
+        /*                                                                                                      */
+        // Java allow us to have two function with same name but have different input and have a different process
+
+
+        // Initiating Age.class to be use in this main function
+        Age age = new Age();
+
+        // Set age using one arguments
+        age.setAge(20);
+        // Printing the result
+        System.out.println(age.getAge());
+        // Set age using two arguments
+        age.setAge(20, 5);
+        // Printing the result
+        System.out.println(age.getAge());
+
+        // Using Constructor to input the data
+        // Using constructor with one parameter
+        Age age0 = new Age(25);
+        // Using constructor with two parameter
+        Age age1 = new Age(25, 5);
+
+        // Printing result with parameter
+        System.out.println(age0.getAge());
+        System.out.println(age1.getAge());
+
+
+        /*                                                                                                     */
+
     }
 }

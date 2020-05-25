@@ -3,7 +3,7 @@ public class StaticTablet {
     StaticTablet() {};
 
     // Function to print type
-    public static void whatIsIt(){
+    static void whatIsIt(){
         System.out.println("This is a tablet");
     }
 }

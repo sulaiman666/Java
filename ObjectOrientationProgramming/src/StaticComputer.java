@@ -3,7 +3,7 @@ public class StaticComputer {
     StaticComputer() {};
 
     // Function to print type
-    public static void whatIsIt(){
+    static void whatIsIt(){
         System.out.println("This is a Computer");
     }
 }

@@ -3,7 +3,7 @@ public class WordTool {
     WordTool() {};
 
     // Function to count letter from given word
-    public int WordCount (String s){
+    int WordCount (String s){
         // Variable to count letter
         int count = 0;
 
@@ -17,7 +17,7 @@ public class WordTool {
     }
 
     // Function to count letter from given word but white space/space included
-    public int FullCount (String s, boolean Space){
+    int FullCount (String s, boolean Space){
         // Variable that used to count how many letter in given word
         int count = 0;
 
@@ -36,7 +36,7 @@ public class WordTool {
     }
 
     // Function to count specific letter
-    public int SpecificLetter(String s, char letter){
+    int SpecificLetter(String s, char letter){
         // Variable to store letter count
         int count = 0;
 
