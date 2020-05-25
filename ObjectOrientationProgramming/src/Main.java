@@ -115,5 +115,23 @@ public class Main {
 
         /*                                                                                                     */
 
+        /*=======================================Recursion=====================================================*/
+        // Recursion is a method in algorithm that we can solve a big problem by solving the small or the basic
+        // problem, in example if we want to get a one meter of wood but we only had a ruler with 30 cm long
+        // we can solve it by using ruler by adding 30 cm + 30 cm + 30 cm + 10 cm by doing that we can get a
+        // meter using only 30 cm ruler. In programming a lot of thing we solve by solving the basic problem
+        // like if we want to get factorial number
+
+        // First we make the factorial class
+
+        // Then we can call the factorial using arguments this time so its can be test all the time
+        // Variable to store the factorial
+        Factorial equitation = new Factorial();
+        int Fact = Integer.parseInt(args[0]);
+        long Result = equitation.GetFactorial(Fact);
+        System.out.println(Result);
+
+        /*=======================================Recursion=====================================================*/
+
     }
 }
