@@ -1,3 +1,4 @@
+@SuppressWarnings("deprecation")    // Annotation to ignore the warnings created by @Deprecated annotation
 public class Main {
     public static void main(String[] args) {
         // write your code here
@@ -132,6 +133,59 @@ public class Main {
         System.out.println(Result);
 
         /*=======================================Recursion=====================================================*/
+
+        /*======================================Annotation=====================================================*/
+        // Annotation is a type of metadata that we can inform to the compiler about the code or function that
+        // we have using an Annotation, annotation is declared using @ followed by the annotation name. We
+        // gonna learn annotation using the build in annotation so we can understand the annotation better.
+        // We will use three build in annotation which is the @Override, @Deprecated, and @SuppressWarnings
+
+        // @Override annotation===============================================================================
+        // We can understand the use of @Override because the name of annotation is simply the function
+        // that annotation have so @Override is overriding the same overriding that we discuss before, this
+        // annotation telling the compiler child class can override the parent class
+
+        // @override example
+        // First we should add the annotation in the tablet class(child class) like the one we create before and add
+        // the annotation right above the function with the same name as the parents, that tells the compiler
+        // in the next code after the annotation we give permission to the child to override the parent
+
+        // Example we call the function
+        Tablet myTab0 = new Tablet();
+        myTab0.whatIsIt();
+
+        // Nb: To test it use the command line because we use arguments in recursive section and need to be
+        // Given arguments to run code after the Recursive Section
+
+        // @Deprecated Annotation=============================================================================
+        // Deprecated annotation is telling the compiler that function that we declare the @Deprecated
+        // have changes that method below the @Deprecated annotation is about to become obsolete, like in the
+        // computer class we had a function that have the same name in the tablet class because of that
+        // we gonna rename it into DeviceType() and we want the compiler tell anyone compile the java file
+        // will have the massage that in Computer class one of the function is about to become obsolete.
+
+        // @Deprecated Annotation example
+        // First we give the annotation in the Computer class because in that class we gonna have some changes
+        // after that if we compile the compiler will give us the warning about Deprecated
+
+        // @SuppressWarnings Annotation======================================================================
+        // In the previous annotation we want the compiler to tell the function is about to become obsolete using
+        // warning and error massage in the compiler, but you can tell the compiler to hide the warnings that
+        // was given in the previous annotation.
+
+        // @SuppressWarnings Example
+        // In this programming code without @SuppressWarnings annotation we will had two error massage, the
+        // first error is come from the tablet class, and the second error is from the Main class. both because
+        // of the @Deprecated annotation in the computer class. To tell the compiler to ignore it we had to give
+        // @SuppressWarnings("deprecation") in both of the class to ignore the warnings about the "deprecation"
+        // you can add the @SuppressWarnings in both of class in the first or before the class function
+        // to tell the compiler that we will let the compiler know to ignore it before the compiler even compile
+        // the file that we want to compile
+
+
+        /*======================================Annotation=====================================================*/
+
+
 
     }
 }

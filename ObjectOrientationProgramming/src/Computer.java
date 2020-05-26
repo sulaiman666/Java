@@ -18,8 +18,11 @@ public class Computer {
     }
 
     // Function to print type
+    @Deprecated // Annotation tell the compiler to tell the function is about to become obsolete
     void whatIsIt(){
         System.out.println("This is a Computer");
     }
 
 }
+
+
