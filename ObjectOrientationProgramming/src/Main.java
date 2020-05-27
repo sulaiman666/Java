@@ -202,5 +202,43 @@ public class Main {
         System.out.println(ITab.getSpeed());
 
         /*======================================Interface======================================================*/
+
+        /*=====================================InnerClass======================================================*/
+        // If we want our classes to be hidden from the program so far we cant do that, but if you want to
+        // there is a way by using inner class type that allow the class to be private. Inner class was
+        // nested inside the other class that public but the inner class can be declared as a private
+        // so it was hidden from the program.
+
+        // InnerClass Example
+        // First we need to make the class that we gonna call container because it containing another
+        // class inside the class. Then write this code to try the Inner Classes
+
+        Container newContainer = new Container();
+        newContainer.printContent();
+
+        // Inner Class is has two type of it which is: method-local inner classes and anonymous classes.
+        // Method-local inner classes is same as the usual declaration of the class we learn so far, the
+        // only differences is the scope, so far we declare the scope of the class is the whole program
+        // but in Method-local classes scope only inside the method and cant be access from other part of
+        // program. And in Anonymous classes is a class that we declare and initiate in the same time,
+        // and because of it our code will be more concise. We will learn Anonymous Class from the
+        // example below
+
+        // Anonymous classes Example
+        // First we will make a function that have the same name as the function in the main that we will make
+        // we will make the print() function, so first we will add it to the container.Java. and then
+        // we will write the code below
+
+        // Anonymous Classes
+        Container AContainer = new Container(){    // We declare the container and also initiate the class in the same time
+            @Override
+            public void print(){
+                System.out.println("This is a print from inside the Main.java");
+            }
+        };
+        AContainer.print();
+        System.out.println(AContainer.i);
+
+        /*=====================================InnerClass======================================================*/
     }
 }
