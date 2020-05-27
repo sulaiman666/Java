@@ -185,7 +185,22 @@ public class Main {
 
         /*======================================Annotation=====================================================*/
 
+        /*======================================Interface======================================================*/
+        // Interface allow our code to get the basic form of our class without having the real function included
+        // class that implement or use the basic form from interface will not extend them just taking their form
 
+        // Interface Example
+        // First of all we need to make the interface, its a different from computer class so we need to make the
+        // interface and we name it as InterfaceComputer.java, and then make the TabletWithInterface class to
+        // implement the computer interface. And now we can call the function in this Main class
 
+        // Call the constructor for TabletWithInterface Class
+        TabletWithInterface ITab = new TabletWithInterface();
+
+        // Print from the TabletWithInterface class
+        System.out.println(ITab.getDeviceType());
+        System.out.println(ITab.getSpeed());
+
+        /*======================================Interface======================================================*/
     }
 }
