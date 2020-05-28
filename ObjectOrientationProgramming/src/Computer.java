@@ -3,26 +3,25 @@ public class Computer {
     private double cpuSpeed;
 
     // Function to initiate Computer java
-    Computer() {
+    public Computer() {
         cpuSpeed = 0;
     };
 
     // Function to store cpuSpeed
-    void setCpuSpeed(double _cpuSpeed){
+    public void setCpuSpeed(double _cpuSpeed){
         cpuSpeed = _cpuSpeed;
     }
 
     // Function to get cpuSpeed
-    double getCpuSpeed(){
+    public double getCpuSpeed(){
         return cpuSpeed;
     }
 
     // Function to print type
     @Deprecated // Annotation tell the compiler to tell the function is about to become obsolete
-    void whatIsIt(){
+    public void whatIsIt(){
         System.out.println("This is a Computer");
     }
-
 }
 
 

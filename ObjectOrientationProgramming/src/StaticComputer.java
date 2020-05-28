@@ -1,9 +1,9 @@
 public class StaticComputer {
     // Initiate StaticComputer
-    StaticComputer() {};
+    public StaticComputer() {};
 
     // Function to print type
-    static void whatIsIt(){
+    public static void whatIsIt(){
         System.out.println("This is a Computer");
     }
 }

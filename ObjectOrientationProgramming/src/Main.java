@@ -1,6 +1,9 @@
 @SuppressWarnings("deprecation")    // Annotation to ignore the warnings created by @Deprecated annotation
 public class Main {
     public static void main(String[] args) {
+        /* @author The Crimson Chin
+        * @version 0.1
+        * @since 20200528*/
         // write your code here
         /*                             Start WordTool.class Section                                             */
 

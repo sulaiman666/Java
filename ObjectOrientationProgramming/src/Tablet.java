@@ -4,23 +4,23 @@ public class Tablet extends Computer {
     private double screenSize;
 
     // Initiate tablet class
-    Tablet(){
+    public Tablet(){
         screenSize = 0;
     }
 
     // Function to store tablet data
-    void setScreenSize(double _screenSize){
+    public void setScreenSize(double _screenSize){
         screenSize = _screenSize;
     }
 
     //Function to get tablet data
-    double getScreenSize(){
+    public double getScreenSize(){
         return screenSize;
     }
 
     //Function to print type
     @Override // Annotation to tell the compiler that this function can override the function with same name in parent class
-    void whatIsIt(){
+    public void whatIsIt(){
         System.out.println("This is a Tablet");
     }
 }

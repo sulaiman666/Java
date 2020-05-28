@@ -1,5 +1,5 @@
 public class TabletWithInterface implements InterfaceComputer{
-    TabletWithInterface(){}
+    public TabletWithInterface(){}
     public String getDeviceType(){
         return "Its a Tablet With Interface";
     }

@@ -1,9 +1,19 @@
+/**
+ * This is a class that containing three method which is the WordCount() to count how many word in the given
+ * sentence, FullCount() to count how many letters in the given sentence with or without spaces,
+ * and the last one is SpecificLetter() to count how many specific letter in the given sentence.
+ * @author The Crimson Chin
+ * @version 0.1
+ * @since 20200528*/
 public class WordTool {
-    // Function to initiate the class if you want to access/use it from other class
-    WordTool() {};
+    public WordTool() {};
 
-    // Function to count letter from given word
-    int WordCount (String s){
+    /**
+     * WordCount
+     * to count how many word in the given sentence.
+     * @param s given string for the program to count
+     * @return int of how many word inside the given sentence*/
+    public int WordCount (String s){
         // Variable to count letter
         int count = 0;
 
@@ -16,8 +26,13 @@ public class WordTool {
         return count;
     }
 
-    // Function to count letter from given word but white space/space included
-    int FullCount (String s, boolean Space){
+    /**
+     * FullCount
+     * to count how many letters in the given sentence with or without spaces.
+     * @param s given string for the program to count
+     * @param Space boolean for telling the program to include or exclude the space
+     * @return int of how many letters inside the given sentence with or without the spaces*/
+    public int FullCount (String s, boolean Space){
         // Variable that used to count how many letter in given word
         int count = 0;
 
@@ -35,8 +50,13 @@ public class WordTool {
         return count;
     }
 
-    // Function to count specific letter
-    int SpecificLetter(String s, char letter){
+    /**
+     * FullCount
+     * to count how many specific letter in the given sentence.
+     * @param s given string for the program to count
+     * @param letter specific letter that program will count
+     * @return int of how many specific letter inside the given sentence*/
+    public int SpecificLetter(String s, char letter){
         // Variable to store letter count
         int count = 0;
 

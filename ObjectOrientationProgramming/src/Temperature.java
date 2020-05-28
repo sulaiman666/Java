@@ -3,13 +3,13 @@ public class Temperature {
     public double tempC = 25;
 
     // Function to print in Celsius
-    double getTempC(){
+    public double getTempC(){
         System.out.println("The Temperature is: " + tempC + " C");
         return tempC;
     }
 
     // Function to print in fahrenheit
-    final double getTempF(){
+    public final double getTempF(){
         return tempC * 9/5 + 32;
     }
 

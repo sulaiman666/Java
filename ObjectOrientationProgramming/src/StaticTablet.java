@@ -1,9 +1,9 @@
 public class StaticTablet {
     // Initiate StaticTable
-    StaticTablet() {};
+    public StaticTablet() {};
 
     // Function to print type
-    static void whatIsIt(){
+    public static void whatIsIt(){
         System.out.println("This is a tablet");
     }
 }
